@@ -6,5 +6,6 @@
   <Folder Name="/Integration/" />
   <Folder Name="/Services/">
     <Project Path="../MIcroServicesWeb.CouponApi/MIcroServicesWeb.CouponApi.csproj" />
+    <Project Path="Mango.Service.AuthApi/Mango.Service.AuthApi.csproj" Id="ae3eeed0-a122-479c-b38a-2baa47566a07" />
   </Folder>
 </Solution>

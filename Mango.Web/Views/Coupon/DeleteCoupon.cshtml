@@ -1,0 +1,85 @@
+﻿@model CouponDto
+
+@{
+    ViewData["Title"] = "Delete Coupon";
+}
+
+<form asp-action="DeleteCoupon" method="post">
+
+    <input asp-for="CouponId" hidden />
+
+    <div class="card border-0 mt-4">
+
+        <div class="card-header bg-danger bg-gradient text-white py-3">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Delete Coupon</h1>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card-body p-4">
+
+            <div class="mb-3">
+
+                <label asp-for="CouponCode" class="form-label"></label>
+
+                <input asp-for="CouponCode"
+                       disabled
+                       class="form-control" />
+
+            </div>
+
+            <div class="mb-3">
+
+                <label asp-for="DiscountAmount" class="form-label"></label>
+
+                <input asp-for="DiscountAmount"
+                       disabled
+                       class="form-control" />
+
+            </div>
+
+            <div class="mb-3">
+
+                <label asp-for="MinAmount" class="form-label"></label>
+
+                <input asp-for="MinAmount"
+                       disabled
+                       class="form-control" />
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-6">
+
+                    <button type="submit"
+                            class="btn btn-danger form-control">
+
+                        Delete
+
+                    </button>
+
+                </div>
+
+                <div class="col-6">
+
+                    <a asp-action="CouponIndex"
+                           class="btn btn-secondary form-control">
+
+                        Back To List
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</form>
